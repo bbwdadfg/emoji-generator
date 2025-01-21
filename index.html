@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI表情包生成器</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>🎨 AI表情包生成器</h1>
+            <p class="subtitle">输入文字描述，AI帮你生成有趣的表情包</p>
+        </header>
+        
+        <div class="main-content">
+            <div class="input-section">
+                <div class="input-wrapper">
+                    <textarea id="userInput" placeholder="例如：'开心'、'悲伤'、'可爱猫咪' 等，让AI为你生成表情包..."></textarea>
+                    <button id="sendButton" class="generate-btn">
+                        <span class="btn-text">生成表情包</span>
+                        <span class="btn-icon">🎯</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="result-section">
+                <h2>生成结果</h2>
+                <div id="resultArea" class="result-content">
+                    <div class="placeholder-text">
+                        表情包将在这里显示 ✨
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <p>提示：生成的表情包仅供娱乐使用 | 支持中文描述</p>
+        </footer>
+    </div>
+
+    <script src="js/api.js"></script>
+</body>
+</html>
